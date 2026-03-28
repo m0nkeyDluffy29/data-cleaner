@@ -16,12 +16,14 @@ MultiDataCleaner is a Python-based data and image cleaning toolkit, designed to 
 - Recommended: virtual environment (venv)
 
 ### Python Packages
+
 - pandas
 - Pillow
 - rembg
 - fastmcp
 
 Install dependencies with:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -29,16 +31,21 @@ pip install -r requirements.txt
 ## Usage
 
 ### Data Cleaning
+
 Use the provided tools to clean data files:
+
 - Remove duplicates
 - Remove empty rows
 
 ### Image Cleaning
+
 Clean and optimize images, with optional background removal:
+
 - Supported formats: JPG, JPEG, PNG, WEBP
 - Optionally remove backgrounds using AI
 
 ### Example (CLI)
+
 ```bash
 python mcp_server.py
 ```
@@ -52,10 +59,13 @@ You can then use the registered tools via the FastMCP interface or integrate the
 - `server.py` — (Optional) Alternative server entry point
 
 ## Adding New Tools
+
 Add new `@mcp.tool()` functions in `mcp_server.py` to extend the toolkit.
 
 ## License
+
 MIT License
 
 ## Author
-[Your Name]
+
+Daksh Sharma
