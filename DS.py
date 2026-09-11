@@ -27,12 +27,17 @@ def clean_data_file(input_path: str, output_path: str) -> str:
     df = df.drop_duplicates()
     df = df.dropna()
 
-    if ext == '.csv':
+    out_ext = os.path.splitext(output_path)[1].lower()
+
+    if out_ext == '.csv':
       df.to_csv(output_path, index=False)
-    elif ext == '.json':
+    elif out_ext == '.json':
       df.to_json(output_path, orient='records', indent=4)
-    elif ext == ['.xlsx', '.xls']:
+    elif out_ext == '.xlsx':
       df.to_excel(output_path, index=False)
+    else:
+      return f"Unsupported output type '{out_ext}'. Supported: .csv, .json, .xlsx"
+
 
     return f"Success! Processed {initial_count} rows. Cleaned file saved to {output_path}."
 

@@ -1,0 +1,13 @@
+# Core
+fastmcp>=3.0
+pandas>=2.0
+Pillow>=10.0
+
+# Excel support (.xlsx read/write)
+openpyxl>=3.1
+
+# Legacy Excel support (.xls read only) - optional
+xlrd>=2.0
+
+# AI background removal (pulls in onnxruntime, ~176 MB model on first use)
+rembg>=2.0

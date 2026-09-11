@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "data-cleaner": {
+      "type": "stdio",
+      "command": "/home/mdl/Desktop/DS/.venv/bin/python3",
+      "args": ["/home/mdl/Desktop/DS/mcp_server.py"]
+    }
+  }
+}
